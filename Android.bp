@@ -1,5 +1,5 @@
 // Copyright (C) 2020 The Proton AOSP Project
-// Copyright (C) 2024-2026 The LineageOS Project
+// Copyright (C) 2024 The LineageOS Project
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -15,14 +15,8 @@
 
 android_app {
     name: "SimpleSettingsConfig",
-
-    static_libs: [
-        "org.lineageos.platform.internal",
-    ],
-
     srcs: ["src/**/*.java"],
-
-    platform_apis: true,
-    certificate: "platform",
     system_ext_specific: true,
+    sdk_version: "current",
+    certificate: "platform",
 }
